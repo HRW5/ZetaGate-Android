@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/image_car_top"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="3:4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_outline_white" />
+
+        <ImageView
+            android:id="@+id/interest_front_left_psi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/image_car_top"
+            app:layout_constraintHorizontal_bias="0.23"
+            app:layout_constraintStart_toStartOf="@+id/image_car_top"
+            app:layout_constraintTop_toTopOf="@+id/image_car_top"
+            app:layout_constraintVertical_bias="0.15"
+            app:srcCompat="@drawable/ic_interest_icon_24dp" />
+
+        <TextView
+            android:id="@+id/text_front_left_psi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="39 PSI"
+            android:textColor="@color/interestText"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/interest_front_left_psi"
+            app:layout_constraintEnd_toStartOf="@+id/interest_front_left_psi"
+            app:layout_constraintTop_toTopOf="@+id/interest_front_left_psi" />
+
+        <ImageView
+            android:id="@+id/interest_rear_left_psi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/image_car_top"
+            app:layout_constraintHorizontal_bias="0.23"
+            app:layout_constraintStart_toStartOf="@+id/image_car_top"
+            app:layout_constraintTop_toTopOf="@+id/image_car_top"
+            app:layout_constraintVertical_bias="0.72"
+            app:srcCompat="@drawable/ic_interest_icon_24dp" />
+
+        <TextView
+            android:id="@+id/text_rear_left_psi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="44 PSI"
+            android:textColor="@color/interestText"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/interest_rear_left_psi"
+            app:layout_constraintEnd_toStartOf="@+id/interest_rear_left_psi"
+            app:layout_constraintTop_toTopOf="@+id/interest_rear_left_psi" />
+
+        <ImageView
+            android:id="@+id/interest_front_right_psi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/image_car_top"
+            app:layout_constraintHorizontal_bias="0.77"
+            app:layout_constraintStart_toStartOf="@+id/image_car_top"
+            app:layout_constraintTop_toTopOf="@+id/image_car_top"
+            app:layout_constraintVertical_bias="0.15"
+            app:srcCompat="@drawable/ic_interest_icon_24dp" />
+
+        <TextView
+            android:id="@+id/text_front_right_psi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="38 PSI"
+            android:textColor="@color/interestText"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/interest_front_right_psi"
+            app:layout_constraintStart_toEndOf="@+id/interest_front_right_psi"
+            app:layout_constraintTop_toTopOf="@+id/interest_front_right_psi" />
+
+        <ImageView
+            android:id="@+id/interest_rear_right_psi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/image_car_top"
+            app:layout_constraintHorizontal_bias="0.77"
+            app:layout_constraintStart_toStartOf="@+id/image_car_top"
+            app:layout_constraintTop_toTopOf="@+id/image_car_top"
+            app:layout_constraintVertical_bias="0.72"
+            app:srcCompat="@drawable/ic_interest_icon_24dp" />
+
+        <TextView
+            android:id="@+id/text_rear_right_psi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="38 PSI"
+            android:textColor="@color/interestText"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/interest_rear_right_psi"
+            app:layout_constraintStart_toEndOf="@+id/interest_rear_right_psi"
+            app:layout_constraintTop_toTopOf="@+id/interest_rear_right_psi" />
+
+        <ImageView
+            android:id="@+id/interest_battery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/image_car_top"
+            app:layout_constraintHorizontal_bias="0.27"
+            app:layout_constraintStart_toStartOf="@+id/image_car_top"
+            app:layout_constraintTop_toTopOf="@+id/image_car_top"
+            app:layout_constraintVertical_bias="0.84"
+            app:srcCompat="@drawable/ic_interest_icon_24dp" />
+
+        <TextView
+            android:id="@+id/text_battery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="13.8 Volts"
+            android:textColor="@color/interestText"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/interest_battery"
+            app:layout_constraintEnd_toStartOf="@+id/interest_battery"
+            app:layout_constraintTop_toTopOf="@+id/interest_battery" />
+
+        <Button
+            android:id="@+id/button_lock"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="Lock"
+            app:layout_constraintBottom_toTopOf="@+id/button_unlock"
+            app:layout_constraintEnd_toEndOf="@+id/image_car_top"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/image_car_top"
+            app:layout_constraintTop_toTopOf="@+id/image_car_top"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <Button
+            android:id="@+id/button_unlock"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Unlock"
+            app:layout_constraintBottom_toBottomOf="@+id/image_car_top"
+            app:layout_constraintEnd_toEndOf="@+id/image_car_top"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/image_car_top"
+            app:layout_constraintTop_toBottomOf="@+id/button_lock"
+            app:layout_constraintVertical_bias="0.56" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>

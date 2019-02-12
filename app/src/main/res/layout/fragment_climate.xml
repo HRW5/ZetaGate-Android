@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/image_car_side"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="48dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="48dp"
+            app:layout_constraintBottom_toTopOf="@+id/text_temperature"
+            app:layout_constraintDimensionRatio="16:5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5"
+            app:srcCompat="@drawable/ic_side_outline_white" />
+
+        <ImageView
+            android:id="@+id/interest_front_demist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/image_car_side"
+            app:layout_constraintEnd_toEndOf="@+id/image_car_side"
+            app:layout_constraintHorizontal_bias="0.35"
+            app:layout_constraintStart_toStartOf="@+id/image_car_side"
+            app:layout_constraintTop_toTopOf="@+id/image_car_side"
+            app:layout_constraintVertical_bias=".1"
+            app:srcCompat="@drawable/ic_interest_icon_24dp" />
+
+        <Switch
+            android:id="@+id/switch_front_demist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:switchPadding="8dp"
+            android:text="Front Demist"
+            android:textColor="@color/interestText"
+            app:layout_constraintBottom_toTopOf="@+id/interest_front_demist"
+            app:layout_constraintEnd_toEndOf="@+id/interest_front_demist"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintStart_toStartOf="@+id/interest_front_demist" />
+
+        <ImageView
+            android:id="@+id/interest_rear_demist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/image_car_side"
+            app:layout_constraintEnd_toEndOf="@+id/image_car_side"
+            app:layout_constraintHorizontal_bias="0.86"
+            app:layout_constraintStart_toStartOf="@+id/image_car_side"
+            app:layout_constraintTop_toTopOf="@+id/image_car_side"
+            app:layout_constraintVertical_bias=".1"
+            app:srcCompat="@drawable/ic_interest_icon_24dp" />
+
+        <Switch
+            android:id="@+id/switch_rear_demist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:switchPadding="8dp"
+            android:text="Rear Demist"
+            android:textColor="@color/interestText"
+            app:layout_constraintBottom_toTopOf="@+id/interest_rear_demist"
+            app:layout_constraintEnd_toEndOf="@+id/interest_rear_demist"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="@+id/interest_rear_demist" />
+
+        <ImageView
+            android:id="@+id/interest_polution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/image_car_side"
+            app:layout_constraintEnd_toEndOf="@+id/image_car_side"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/image_car_side"
+            app:layout_constraintTop_toTopOf="@+id/image_car_side"
+            app:layout_constraintVertical_bias="1"
+            app:srcCompat="@drawable/ic_interest_icon_24dp" />
+
+        <Switch
+            android:id="@+id/switch_polution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:switchPadding="8dp"
+            android:text="Pollution Mode"
+            android:textColor="@color/interestText"
+            app:layout_constraintEnd_toEndOf="@+id/interest_polution"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="@+id/interest_polution"
+            app:layout_constraintTop_toBottomOf="@+id/interest_polution" />
+
+        <Switch
+            android:id="@+id/switch_hvac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:switchPadding="8dp"
+            android:text="Climate Control"
+            android:textColor="@color/interestText"
+            android:theme="@style/AppTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Switch
+            android:id="@+id/switch_ac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:switchPadding="8dp"
+            android:text="AC Power"
+            android:textColor="@color/interestText"
+            android:theme="@style/AppTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/switch_hvac" />
+
+        <Button
+            android:id="@+id/button_mode_previous"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="Previous"
+            app:layout_constraintBaseline_toBaselineOf="@+id/text_temperature2"
+            app:layout_constraintEnd_toStartOf="@+id/button_mode_next"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/text_temperature2" />
+
+        <Button
+            android:id="@+id/button_mode_next"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:text="Next"
+            app:layout_constraintBaseline_toBaselineOf="@+id/button_mode_previous"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button_mode_previous" />
+
+        <Button
+            android:id="@+id/button_left_warmer"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Warmer"
+            app:layout_constraintBottom_toTopOf="@+id/text_left_temperature"
+            app:layout_constraintEnd_toEndOf="@+id/button_left_cooler"
+            app:layout_constraintStart_toStartOf="@+id/button_left_cooler" />
+
+        <TextView
+            android:id="@+id/text_left_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="69°"
+            android:textColor="@color/colorPrimary"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toTopOf="@+id/button_left_cooler"
+            app:layout_constraintEnd_toEndOf="@+id/button_left_cooler"
+            app:layout_constraintStart_toStartOf="@+id/button_left_cooler" />
+
+        <Button
+            android:id="@+id/button_left_cooler"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Cooler"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button_fan_down"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/button_right_warmer"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Warmer"
+            app:layout_constraintBottom_toTopOf="@+id/text_right_temperature"
+            app:layout_constraintEnd_toEndOf="@+id/button_right_cooler"
+            app:layout_constraintStart_toStartOf="@+id/button_right_cooler" />
+
+        <Switch
+            android:id="@+id/switch_auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="16dp"
+            android:switchPadding="8dp"
+            android:text="Auto"
+            android:textColor="@color/interestText"
+            android:theme="@style/AppTheme"
+            app:layout_constraintBottom_toTopOf="@+id/switch_pass_sync"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Switch
+            android:id="@+id/switch_pass_sync"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="16dp"
+            android:switchPadding="8dp"
+            android:text="Dual Zone"
+            android:textColor="@color/interestText"
+            android:theme="@style/AppTheme"
+            app:layout_constraintBottom_toTopOf="@+id/divider"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/text_right_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="71°"
+            android:textColor="@color/colorPrimary"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toTopOf="@+id/button_right_cooler"
+            app:layout_constraintEnd_toEndOf="@+id/button_right_cooler"
+            app:layout_constraintStart_toStartOf="@+id/button_right_cooler" />
+
+        <Button
+            android:id="@+id/button_right_cooler"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Cooler"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button_fan_down" />
+
+        <Button
+            android:id="@+id/button_fan_up"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Fan Up"
+            app:layout_constraintBottom_toTopOf="@+id/text_fan_speed"
+            app:layout_constraintEnd_toEndOf="@+id/button_fan_down"
+            app:layout_constraintStart_toStartOf="@+id/button_fan_down" />
+
+        <TextView
+            android:id="@+id/text_fan_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="8"
+            android:textColor="@color/colorPrimary"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toTopOf="@+id/button_fan_down"
+            app:layout_constraintEnd_toEndOf="@+id/button_fan_down"
+            app:layout_constraintStart_toStartOf="@+id/button_fan_down" />
+
+        <Button
+            android:id="@+id/button_fan_down"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Fan Down"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button_right_cooler"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button_left_cooler" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toTopOf="@+id/button_fan_up"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/text_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="16dp"
+            android:text="Temperature Control"
+            android:textColor="@color/interestText"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/divider"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/text_temperature2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Air Flow"
+            android:textColor="@color/interestText"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/divider"
+            app:layout_constraintEnd_toStartOf="@+id/button_mode_previous"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/switch_polution"
+            app:layout_constraintVertical_bias="0" />
+
+        <android.support.constraint.Group
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>
